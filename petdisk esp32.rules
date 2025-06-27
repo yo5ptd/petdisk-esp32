@@ -1,0 +1,102 @@
+
+(rules PCB petdisk esp32.dsn
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 4.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.2)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clearance 200.0)
+    (clearance 100.0 (type smd_to_turn_gap))
+    (clearance 50.0 (type smd))
+    (clearance 200.0 (type "kicad_default"))
+    (clearance 200.0 (type PWR))
+  )
+  (padstack "Via[0-1]_1000:600_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1000:600_um" "Via[0-1]_1000:600_um" default
+  )
+  (via 
+    "Via[0-1]_1000:600_um-kicad_default" "Via[0-1]_1000:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1000:600_um-PWR" "Via[0-1]_1000:600_um" PWR
+  )
+  (via_rule
+    default "Via[0-1]_1000:600_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1000:600_um-kicad_default"
+  )
+  (via_rule
+    PWR "Via[0-1]_1000:600_um-PWR"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-A)" "unconnected-(J1-Pin_2-Pad2)" "Net-(J1-Pin_5)" "Net-(J1-Pin_6)" "Net-(J1-Pin_4)" "Net-(J1-Pin_3)" "Net-(J3-DET_B)" "Net-(J3-DAT3{slash}CD)"
+    "Net-(J3-CLK)" "unconnected-(J3-DAT2-Pad1)" "Net-(J3-CMD)" "unconnected-(J3-DAT1-Pad8)" "Net-(J3-DAT0)" /ports/EOI "Net-(Q1-S)" "Net-(Q2-S)"
+    /ports/DAV "Net-(Q3-S)" /ports/NDAC /ports/NRFD "Net-(Q4-S)" "Net-(Q5-S)" /ports/ATN "Net-(U1-IO2)"
+    "Net-(U1-IO15)" "unconnected-(U1-SCK{slash}CLK-Pad20)" "Net-(U1-IO25)" "unconnected-(U1-SHD{slash}SD2-Pad17)" "unconnected-(U1-SDI{slash}SD1-Pad22)" "unconnected-(U1-SENSOR_VN-Pad5)" "unconnected-(U1-SCS{slash}CMD-Pad19)" "unconnected-(U1-SWP{slash}SD3-Pad18)"
+    "Net-(U1-IO13)" "Net-(U1-IO33)" "Net-(U1-IO27)" "unconnected-(U1-SDO{slash}SD0-Pad21)" "Net-(U1-IO14)" "Net-(U1-IO26)" "Net-(U1-IO12)" "unconnected-(U1-IO35-Pad7)"
+    "Net-(U1-IO32)" "unconnected-(U1-NC-Pad32)" "unconnected-(U1-SENSOR_VP-Pad4)" /ports/DIO4 /ports/DIO2 /ports/DIO1 /ports/DIO7 /ports/DIO5
+    /ports/DIO6 /ports/DIO8 /ports/DIO3 "unconnected-(DRL2-PadP$1)" /ports/SQR "unconnected-(DRL1-PadP$1)" "unconnected-(J4-DIO5-PadA)" "unconnected-(J4-DIO7-PadC)"
+    "unconnected-(J4-DIO6-PadB)" "unconnected-(J4-DIO8-PadD)" /ports/IFC /ports/REN
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PWR
+    GND VCC +5V
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
