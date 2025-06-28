@@ -29,7 +29,7 @@ I've only changed the SD slot to Hanbo Electric TS-013 as this was available at 
 
 Panelized with Kikit addon with hand-breakable "mousebytes", it still fits the 100x100 mm JLCPCB limit (Kikit.json settings included, details in https://github.com/yaqwsx/KiKit). 
 
-The idea is to order the placement for the cheap SMD components, and only solder 3 electrolytic capacitors, the ESP32 module and a "805 Strip Connector 3.96mm Pitch 12 Pin" connector from Aliexpress. Cost per board from JLPCB thus is around 2.7$ when ordered in batches of 5 (10 boards in total, coupons used) :) With connector, capacitors, esp32 should not get over 8.5$ per board.
+The idea is to order the placement for the cheap SMD components, and only solder 3 electrolytic capacitors, the ESP32 module and a "805 Strip Connector 3.96mm Pitch 12 Pin" connector from Aliexpress. Cost per board from JLPCB thus is around 3.3$ when ordered in batches of 5 (10 boards in total, coupons used, shipping and taxes included) With connector, capacitors, esp32 should not get over 8.5$ per board, but probably more as I don't plan to order 10 of these.
 
 You need the:
 [Gerbers](gerbers.2xpetdisk-esp32.zip)
