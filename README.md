@@ -1,6 +1,8 @@
 # petdisk-esp32
 CBM PETDISK based on Esp32 and MicroSD
 
+$\textcolor{red}{\textsf{Warning! Board still untested!}}$
+
 ## Introduction
 My fourth PCB design, first (mostly) SMD one to test how ordering assembled PCB from JLCPCB works. Motivation for this was that it's a bit of a pain to order @bitfixer 's Petdisk Max V2 Esp32 from the US, and I've found no alternatives in the EU. 
 
