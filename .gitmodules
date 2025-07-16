@@ -1,0 +1,3 @@
+[submodule "petdisk-max"]
+	path = petdisk-max
+	url = https://github.com/bitfixer/petdisk-max

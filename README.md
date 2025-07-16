@@ -22,6 +22,8 @@ I've only changed the SD slot to Hanbo Electric TS-013 as this was available at 
 
 [Back](petdisk%20esp32-back.jpg)
 
+![Received](petdisk_arrived.jpg)
+
 
 ## Panelization and odering from JLCPCB
 
