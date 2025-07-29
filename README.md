@@ -18,7 +18,7 @@ I've only changed the SD slot to Hanbo Electric TS-013 as this was available at 
 
 [PCB Layout](CBM-Petdisk-Board.pdf)
 
-[Assembled](images/assembled.jpg)
+[Assembled](assembled.jpg)
 
 [Front](petdisk%20esp32.jpg)
 
