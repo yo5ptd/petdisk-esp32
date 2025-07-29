@@ -1,8 +1,6 @@
 # petdisk-esp32
 CBM PETDISK based on Esp32 and MicroSD
 
-$\textcolor{red}{\textsf{Warning! Board still untested!}}$
-
 ## Introduction
 My fourth PCB design, first (mostly) SMD one to test how ordering assembled PCB from JLCPCB works. Motivation for this was that it's a bit of a pain to order @bitfixer 's Petdisk Max V2 Esp32 from the US, and I've found no alternatives in the EU. 
 
@@ -44,4 +42,4 @@ Disregards the duplicate message, also allow auto placement alignment.
 
 note that the programming port pinout is different from the original.
 
-THIS BOARD IS STILL UNTESTED!
+First board was fully assembled and tested on 29.07.2025. Note that I managed to get it working with the original Petdisk max v2.1 firmware with a 32GB card. 512mb, 1gb and 128gb cards were not recognized.
